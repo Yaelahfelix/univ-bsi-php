@@ -626,6 +626,10 @@ function icon_svg($name)
         </div>
     </section>
 
+    <?php
+        include 'data/news.php';
+    ?>
+
     <!-- FOOTER -->
     <footer id="kontak">
         <div class="container">
