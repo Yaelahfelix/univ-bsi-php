@@ -477,7 +477,7 @@ function icon_svg($name)
                     <h1>Kuliah murah & kekinian? <br> Di <span style="color:var(--indigo-600)">BSI</span> aja!</h1>
                     <p>Kampus praktis untuk karier digital: kurikulum up-to-date, dosen praktisi, UKT ramah kantong, dan jaringan magang luas.</p>
                     <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:12px">
-                        <button class="btn" onclick="alert('Form pendaftaran coming soon')">Ayo Gabung</button>
+                       <a class="btn" href="pendaftaran.php">Ayo Gabung</a>
                         <a class="btn btn--light" href="#kontak">Kontak Kami</a>
                     </div>
                     <div class="hero-stats">
@@ -532,8 +532,7 @@ function icon_svg($name)
                         </div>
                         <div class="card-footer">
                             <span style="font-size:14px;color:#6b7280">Akreditasi: <?= htmlspecialchars($p['akreditasi']) ?></span>
-                            <button class="btn btn--light btn--sm" onclick="alert('Detail <?= htmlspecialchars($p['title']) ?>')">Detail</button>
-                        </div>
+                            <a class="btn btn--light btn--sm" href="detail.php?program=<?= urlencode($p['title']) ?>">Detail</a>
                     </article>
                 <?php endforeach; ?>
             </div>
@@ -619,8 +618,8 @@ function icon_svg($name)
                     <p style="margin:0;color:#dbeafe">Daftar sekarang dan amankan kursi di gelombang beasiswa.</p>
                 </div>
                 <div style="display:flex;gap:12px">
-                    <a class="btn btn--light" href="#daftar">Daftar Sekarang</a>
-                    <a class="btn btn--outline" href="#jadwal">Jadwal Info Session</a>
+                    <a class="btn btn--light" href="pendaftaran.php">Daftar Sekarang</a>
+                    <a class="btn btn--outline" href="jadwal.php">Jadwal Info Session</a>
                 </div>
             </div>
         </div>
@@ -658,9 +657,9 @@ function icon_svg($name)
                 <div>
                     <h4 style="margin:0 0 12px;font-weight:700;color:#0f172a">Ikuti Kami</h4>
                     <div style="display:flex;gap:8px">
-                        <a class="btn btn--light btn--xs" href="#">IG</a>
-                        <a class="btn btn--light btn--xs" href="#">YT</a>
-                        <a class="btn btn--light btn--xs" href="#">TT</a>
+                        <a class="btn btn--light btn--xs" href="https://www.instagram.com/kuliahbsiaja/?hl=en" target="_blank">IG</a>
+                        <a class="btn btn--light btn--xs" href="https://www.youtube.com/@KuliahBSIAja" target="_blank">YT</a>
+                        <a class="btn btn--light btn--xs" href="https://www.tiktok.com/@ubsi_official" target="_blank">TT</a>
                     </div>
                 </div>
             </div>
