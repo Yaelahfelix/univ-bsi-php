@@ -7,14 +7,58 @@
   <meta name="description" content="Register as a new student and check your registration schedule." />
   <style>
     :root{
-      --bg:#F7FAFC; --card:#ffffff; --muted:#6B7280; --accent:#0EA5A4; --accent-2:#06B6D4; --glass: rgba(255,255,255,0.6);
-      --radius:14px; --shadow: 0 6px 18px rgba(15,23,42,0.08);
-      --max-width:1100px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:linear-gradient(180deg,#eef2f7 0%,var(--bg) 60%);color:#0f172a;line-height:1.45}
-    .container{width:95%;max-width:var(--max-width);margin:36px auto}
+  --bg:#F7FAFC; 
+  --card:#ffffff; 
+  --muted:#6B7280; 
+  --accent:#0A5EB0;        /* Updated primary color */
+  --accent-2:#0C7FDA;      /* Secondary tone */
+  --glass: rgba(255,255,255,0.6);
+  --radius:14px; 
+  --shadow: 0 6px 18px rgba(15,23,42,0.08);
+  --max-width:1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.logo{
+  height:78px;
+  width:78px;
+  border-radius:14px;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+/* Updated Buttons */
+.btn{
+  background:var(--accent);
+  color:white;
+  padding:10px 16px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.2s;
+}
+
+.btn:hover{
+  background:#094f93;
+}
+
+.ghost{
+  background:transparent;
+  border:1px solid #bcd4f2;
+  padding:8px 12px;
+  border-radius:10px;
+  color:#0A5EB0;
+}
 
     /* Header */
     header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
@@ -76,23 +120,23 @@
       </div>
       <nav class="nav">
         <a class="ghost" href="#faq">FAQ</a>
-        <a class="btn" href="#register">Daftar Sekarang</a>
+        <a class="btn" href="pendaftaran.php">Daftar Sekarang</a>
       </nav>
     </header>
 
     <section class="hero">
       <div class="hero-card">
         <h2>Selamat Datang calon mahasiswa BSI 👋</h2>
-        <p>Silahkan cek jadwal registrasi kamu tapi jangan lupa persiapkan document dan persyaratan yang diperlukan, lalu kamu baru bisa melanjutkan registrasi. Pilih fakultas yang kamu minati dan jadwal yang tersedia ya!</p>
+        <p>Silahkan cek jadwal untuk registrasi kamu disini, Jangan lupa pilih fakultas yang kamu minati dan jadwal yang tersedia ya!</p>
         <div class="kpis">
           <div class="kpi"><strong>3,200+</strong><span style="color:var(--muted);font-size:13px">Orang mendaftar</span></div>
           <div class="kpi"><strong>15</strong><span style="color:var(--muted);font-size:13px">Hari pendaftaran</span></div>
-          <div class="kpi"><strong>9am - 4pm</strong><span style="color:var(--muted);font-size:13px">Jadwal Administrasi</span></div>
+          <div class="kpi"><strong>09.00 - 16.00</strong><span style="color:var(--muted);font-size:13px">Jadwal Administrasi</span></div>
         </div>
 
         <div style="margin-top:18px;display:flex;gap:10px;align-items:center">
           <a class="btn" href="#schedule">Lihat jadwal</a>
-          <a class="ghost" href="#requirements">Persyaratan</a>
+
         </div>
       </div>
 
@@ -124,46 +168,45 @@
             </thead>
             <tbody>
               <!-- Example rows; replace with server data -->
-              <tr data-faculty="Tekdus" data-session="Pagi"><td>A. Putra (NIM: 20260011)</td><td>Teknik industri</td><td>Jan 10, 2026</td><td>09:00</td><td class="action"><span class="tag">Tatap muka</span></td></tr>
-              <tr data-faculty="SI" data-session="Siang"><td>S. Dewi (NIM: 20260012)</td><td>Sistem Informasi</td><td>Jan 11, 2026</td><td>13:30</td><td class="action"><span class="tag">Online</span></td></tr>
-              <tr data-faculty="TI" data-session="Pagi"><td>R. Haris (NIM: 20260013)</td><td>Teknologi Informasi</td><td>Jan 12, 2026</td><td>10:00</td><td class="action"><span class="tag">Tatap muka</span></td></tr>
-              <tr data-faculty="Management" data-session="Siang"><td>L. Prames (NIM: 20260014)</td><td>Management</td><td>Jan 13, 2026</td><td>14:00</td><td class="action"><span class="tag">Tatap muka</span></td></tr>
+              <tr data-faculty="Tekdus" data-session="Pagi"><td>Alvito Deannoval (NIM: 17260184)</td><td>Teknik industri</td><td>Jan 10, 2026</td><td>09:00</td><td class="action"><span class="tag">Tatap muka</span></td></tr>
+              <tr data-faculty="SI" data-session="Siang"><td>Rafli Firdaus (NIM: 17261010)</td><td>Sistem Informasi</td><td>Jan 11, 2026</td><td>13:30</td><td class="action"><span class="tag">Online</span></td></tr>
+              <tr data-faculty="TI" data-session="Pagi"><td>Ferdinand Felix (NIM: 17268888)</td><td>Teknologi Informasi</td><td>Jan 12, 2026</td><td>10:00</td><td class="action"><span class="tag">Tatap muka</span></td></tr>
+              <tr data-faculty="Management" data-session="Siang"><td>Lintang (NIM: 17246767)</td><td>Management</td><td>Jan 13, 2026</td><td>14:00</td><td class="action"><span class="tag">Tatap muka</span></td></tr>
             </tbody>
           </table>
         </div>
 
-        <p style="margin-top:10px;font-size:13px;color:var(--muted)">Nama kamu tidak ada? Silahkan Hubungi <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Customer Service</a>.</p>
       </aside>
     </section>
 
     <section class="grid-2">
       <div class="hero-card">
-        <h3>Registration Steps</h3>
+        <h3>Tata cara registrasi</h3>
         <div style="margin-top:12px">
-          <div class="step"><div class="num">1</div><div><strong>Fill the online form</strong><div style="color:var(--muted);font-size:13px">Complete your personal and academic details</div></div></div>
-          <div class="step" style="margin-top:10px"><div class="num">2</div><div><strong>Upload documents</strong><div style="color:var(--muted);font-size:13px">Photo, ID, High-school diploma, Payment proof</div></div></div>
-          <div class="step" style="margin-top:10px"><div class="num">3</div><div><strong>Attend allocated session</strong><div style="color:var(--muted);font-size:13px">On campus or online verification</div></div></div>
-          <div class="step" style="margin-top:10px"><div class="num">4</div><div><strong>Confirm activation</strong><div style="color:var(--muted);font-size:13px">Student account and timetable activation</div></div></div>
+          <div class="step"><div class="num">1</div><div><strong>Isi formulir online</strong><div style="color:var(--muted);font-size:13px">Mengisi data dan detail akademis</div></div></div>
+          <div class="step" style="margin-top:10px"><div class="num">2</div><div><strong>Upload Dokumen</strong><div style="color:var(--muted);font-size:13px">Foto 4x6, Kartu identitas, Surat kelulusan, Kartu keluarga, Akta kelahiran</div></div></div>
+          <div class="step" style="margin-top:10px"><div class="num">3</div><div><strong>Melakukan pembayaran registrasi</strong><div style="color:var(--muted);font-size:13px">Mengirim bukti pembayaran</div></div></div>
+          <div class="step" style="margin-top:10px"><div class="num">4</div><div><strong>Mengikuti ujian tes online</strong><div style="color:var(--muted);font-size:13px">Ujian seleksi online</div></div></div>
         </div>
       </div>
 
       <div class="hero-card" id="faq">
         <h3>FAQ</h3>
         <div class="faq">
-          <div class="q">What documents do I need for registration?</div>
-          <div class="a">You will need a passport photo, a copy of your ID, your high school diploma/ transcript, and proof of payment. Originals may be requested during on-site verification.</div>
+          <div class="q">Dokumen apa saja yang saya perlukan untuk registrasi?</div>
+          <div class="a">Kamu akan diminta untuk mengirim pas foto 4x6, Fotocopy KTP, Surat Kelulusan/Transcript nilai, Akta kelahiran dan Kartu Keluarga.</div>
 
-          <div class="q">Can I change my schedule?</div>
-          <div class="a">Schedule changes depend on availability. Contact the registration office with your NIM and preferred dates; changes are accepted within 7 days before your allocated slot.</div>
+          <div class="q">Apakah bisa reschedule?</div>
+          <div class="a">Untuk saat ini kami belum bisa melakukan reschedule, jadi kamu harus tentukan waktu yang pas agar tidak perlu melakukan daftar ulang lagi.</div>
 
-          <div class="q">How do I attend an online verification?</div>
-          <div class="a">Online verification details (link and instructions) will be emailed to your registered email. Ensure a stable internet connection and the required documents scanned.</div>
+          <div class="q">Bagaimana caranya mengikuti Ujian tes seleksi online?</div>
+          <div class="a">Setelah kamu melakukan pembayaran, dalam email kamu akan otomatis mendapatkan link untuk melakukan Ujian paling lambat 1x24 jam.</div>
         </div>
       </div>
     </section>
 
     <footer>
-      © <span id="year"></span> Campus Registration • Support: <a href="mailto:support@campus.edu">support@campus.edu</a>
+      © <span id="year"></span> Registrasi Mahasiswa • Support: <a href="mailto:info@bsi.ac.id"> info@bsi.ac.id</a>
     </footer>
   </div>
 
