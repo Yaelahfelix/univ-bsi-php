@@ -111,6 +111,53 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             font-size: 14px;
             color: #666;
         }
+
+        /* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .card {
+        padding: 25px 20px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .message {
+        font-size: 14px;
+    }
+    table td:first-child {
+        width: 40%;
+        font-size: 14px;
+    }
+    table td:last-child {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 9px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 20px 15px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .message {
+        font-size: 13px;
+    }
+    table td:first-child {
+        width: 45%;
+        font-size: 13px;
+    }
+    table td:last-child {
+        font-size: 13px;
+    }
+    .btn {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}
     </style>
 </head>
 <body>

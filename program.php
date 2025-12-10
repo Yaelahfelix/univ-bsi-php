@@ -5,19 +5,19 @@ $favoritePrograms = [
     'title' => 'Informatika',
     'desc'  => 'Ngoding full-stack, AI dasar, dan DevOps praktis bareng dosen praktisi.',
     'tags'  => ['Full-Stack','AI','DevOps'],
-    'image' => 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop',
+    'image' => 'https://images.unsplash.com/photo-1763568258492-7c006595375a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3lzdGVtJTIwaW5mb3JtYXRpb258ZW58MHx8MHx8fDA%3D',
   ],
   [
     'title' => 'Sistem Informasi',
     'desc'  => 'Analisis bisnis-IT, ERP, dan data untuk optimalisasi proses.',
     'tags'  => ['Bisnis-IT','ERP','Data'],
-    'image' => 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop',
+    'image' => 'https://plus.unsplash.com/premium_photo-1661515344184-5c0b72ded4bd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5mb3JtYXRpa2F8ZW58MHx8MHx8fDA%3D',
   ],
   [
     'title' => 'Desain Komunikasi Visual',
     'desc'  => 'Branding, UI/UX, dan motion untuk industri kreatif.',
     'tags'  => ['UI/UX','Branding','Motion'],
-    'image' => 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop',
+    'image' => 'https://images.unsplash.com/photo-1605606722649-39761c5a3397?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzaWduJTIwdmlzdWFsJTIwY29tdW5pY2F0aW9ufGVufDB8fDB8fHww',
   ],
 ];
 
@@ -45,7 +45,7 @@ $programsByLevel = [
       'degree' => 'Ahli Madya (A.Md.)',
       'summary' => 'Dasar pemrograman, jaringan, dan administrasi sistem.',
       'tags' => ['Networking','SysAdmin','Pemrograman'],
-      'banner' => 'https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop',
+      'banner' => 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5mb3JtYXRpb24lMjBUZWNobm9sb2d5fGVufDB8fDB8fHww',
     ],
   ],
   's1' => [
@@ -74,7 +74,7 @@ $programsByLevel = [
       'degree' => 'S.Kom.',
       'summary' => 'Arsitektur sistem, jaringan, keamanan, dan komputasi awan.',
       'tags' => ['Cloud','Security','Networking'],
-      'banner' => 'https://images.unsplash.com/photo-1555949963-aa79dcee981d?q=80&w=1200&auto=format&fit=crop',
+      'banner' => 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5mb3JtYXRpb24lMjBUZWNobm9sb2d5fGVufDB8fDB8fHww',
     ],
     [
       'code' => 'ik',
@@ -83,7 +83,7 @@ $programsByLevel = [
       'degree' => 'S.Ikom.',
       'summary' => 'Strategi komunikasi, public relations, media digital & content.',
       'tags' => ['PR','Content','Media'],
-      'banner' => 'https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop',
+      'banner' => 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVibGljJTIwc3BlYWtpbmd8ZW58MHx8MHx8fDA%3D',
     ],
     [
       'code' => 'mnj',
@@ -110,7 +110,7 @@ $programsByLevel = [
       'degree' => 'S.T.',
       'summary' => 'Optimasi proses, supply chain, ergonomi, dan manajemen kualitas.',
       'tags' => ['Supply Chain','Lean','Quality'],
-      'banner' => 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop',
+      'banner' => 'https://plus.unsplash.com/premium_photo-1661877094677-d153c2d2aac4?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kdXN0cmlhbCUyMEVuZ2luZWVyaW5nfGVufDB8fDB8fHww',
     ],
     [
       'code' => 'dkv',
@@ -119,7 +119,7 @@ $programsByLevel = [
       'degree' => 'S.Ds.',
       'summary' => 'Branding, UI/UX, dan motion untuk industri kreatif.',
       'tags' => ['UI/UX','Branding','Motion'],
-      'banner' => 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop',
+      'banner' => 'https://images.unsplash.com/photo-1759984782050-981de6a25d55?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmlzdWFsJTIwY29tbXVuaWNhdGlvbiUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D',
     ],
   ],
   's2' => [
@@ -130,7 +130,7 @@ $programsByLevel = [
       'degree' => 'M.Kom.',
       'summary' => 'Riset terapan AI/ML dan arsitektur sistem skala besar.',
       'tags' => ['AI/ML','Big Data','Cloud'],
-      'banner' => 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop',
+      'banner' => 'https://images.unsplash.com/photo-1617240016072-d92174e44171?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aW5mb3JtYXRpY3N8ZW58MHx8MHx8fDA%3D',
     ],
   ],
 ];
@@ -184,9 +184,9 @@ $partnerLogos = [
 ];
 
 $alumni = [
-  ['name' => 'Rizal Pratama', 'role' => 'Software Engineer', 'company' => 'Startup Fintech', 'avatar' => 'https://i.pravatar.cc/100?img=12', 'quote' => 'Belajar full-stack & DevOps bikin transisi ke dunia kerja jadi mulus.'],
-  ['name' => 'Nadia Putri', 'role' => 'UI/UX Designer', 'company' => 'Studio Kreatif', 'avatar' => 'https://i.pravatar.cc/100?img=5', 'quote' => 'Project real dengan mitra industri nambah portofolio yang kuat.'],
-  ['name' => 'Adit W.', 'role' => 'ERP Consultant', 'company' => 'Konsultan TI', 'avatar' => 'https://i.pravatar.cc/100?img=23', 'quote' => 'Fondasi bisnis-IT di SI kepake banget pas handle implementasi ERP.'],
+  ['name' => 'Rizal Pratama', 'role' => 'Software Engineer', 'company' => 'Startup Fintech', 'avatar' => 'https://i.pravatar.cc/150?img=12', 'quote' => 'Belajar full-stack & DevOps bikin transisi ke dunia kerja jadi mulus.'],
+  ['name' => 'Nadia Putri', 'role' => 'UI/UX Designer', 'company' => 'Studio Kreatif', 'avatar' => 'https://i.pravatar.cc/150?img=5', 'quote' => 'Project real dengan mitra industri nambah portofolio yang kuat.'],
+  ['name' => 'Adit W.', 'role' => 'ERP Consultant', 'company' => 'Konsultan TI', 'avatar' => 'https://i.pravatar.cc/150?img=23', 'quote' => 'Fondasi bisnis-IT di SI kepake banget pas handle implementasi ERP.'],
 ];
 
 $activeLevel = 'd3';

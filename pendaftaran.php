@@ -1,5 +1,4 @@
 <?php
-// daftar jurusan dan agama
 $jurusan = [
     'Akuntansi',
     'Manajemen',
@@ -15,36 +14,63 @@ $agama = ['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu'];
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style-form.css">
   <title>Formulir Pendaftaran Mahasiswa Baru - Kampus BSI</title>
+
   <style>
     body {
       font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #e3f2fd, #fce4ec);
       margin: 0;
       padding: 0;
+      background: #f5f7fa;
+
+      /* Watermark logo BSI */
+      background-image: url('logo-bsi.png');
+      background-repeat: no-repeat;
+      background-size: 380px;
+      background-position: center;
+      opacity: 0.98;
     }
 
-    header {
-      background-color: #1e88e5;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    }
+/* ===== TAMBAHAN RESPONSIF HEADER ===== */
+header {
+  text-align: center;
+  padding: 25px 15px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 24px;
-    }
+header h1 {
+  font-size: 26px;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+header p {
+  font-size: 14px;
+  line-height: 1.2;
+  word-wrap: break-word;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  header h1 { font-size: 22px; }
+  header p { font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+  header h1 { font-size: 20px; padding: 0 5px; }
+  header p { font-size: 11px; }
+}
 
     .container {
       width: 90%;
-      max-width: 700px;
+      max-width: 720px;
       margin: 40px auto;
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-      padding: 30px 40px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(5px);
+      border-radius: 14px;
+      padding: 40px 45px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
       animation: fadeIn 0.6s ease-in-out;
     }
 
@@ -55,8 +81,11 @@ $agama = ['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu'];
 
     h2 {
       text-align: center;
-      color: #1e88e5;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 22px;
+      color: #0d47a1;
+      letter-spacing: 1px;
     }
 
     form {
@@ -66,54 +95,102 @@ $agama = ['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu'];
 
     label {
       margin-bottom: 6px;
-      font-weight: bold;
+      font-weight: 600;
       color: #333;
+      font-size: 15px;
     }
 
     input, select, textarea {
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-bottom: 15px;
+      padding: 11px;
+      border: 1px solid #bbb;
+      border-radius: 8px;
       font-size: 15px;
-      width: 100%;
-      box-sizing: border-box;
-      transition: 0.2s;
+      margin-bottom: 18px;
+      transition: 0.25s ease;
+      background: #fafafa;
     }
 
     input:focus, select:focus, textarea:focus {
-      border-color: #1e88e5;
+      border-color: #0d47a1;
+      background: #fff;
+      box-shadow: 0 0 6px rgba(13, 71, 161, 0.3);
       outline: none;
-      box-shadow: 0 0 4px #90caf9;
     }
 
     textarea {
       resize: none;
-      height: 80px;
+      height: 90px;
     }
 
     .btn {
-      background-color: #1e88e5;
+      background: #0d47a1;
       color: #fff;
+      padding: 13px;
       border: none;
-      padding: 12px;
-      border-radius: 8px;
-      font-size: 16px;
+      border-radius: 10px;
+      font-size: 17px;
       cursor: pointer;
-      transition: 0.3s;
+      font-weight: 600;
+      transition: 0.25s;
     }
 
     .btn:hover {
-      background-color: #1565c0;
+      background: #093b87;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
     footer {
-      text-align: center;
-      font-size: 14px;
-      color: #777;
-      margin-top: 30px;
-      padding-bottom: 15px;
+    text-align: center;
+    padding: 20px 0;
+    color: #666;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  /* ===== TAMBAHAN RESPONSIF ===== */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 20px;
     }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    input, select, textarea, .btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    header p {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 18px;
+    }
+
+    header h1 {
+      font-size: 20px;
+    }
+
+    header p {
+      font-size: 11px;
+    }
+
+    .btn {
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+
   </style>
 </head>
 <body>
@@ -126,12 +203,12 @@ $agama = ['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu'];
   <div class="container">
     <h2>Isi Data Pendaftaran</h2>
 
-    <form method="post" action="proses-pendaftaran.php">
+    <form method="post" action="prosespendaftaran.php">
       <label for="nama">Nama Lengkap</label>
       <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
 
       <label for="nik">NIK</label>
-      <input type="text" id="nik" name="nik" placeholder="Masukkan NIK (Nomor Induk Kependudukan)" required>
+      <input type="text" id="nik" name="nik" placeholder="Masukkan nomor NIK" required>
 
       <label for="email">Email</label>
       <input type="email" id="email" name="email" placeholder="contoh: nama@email.com" required>
@@ -140,7 +217,7 @@ $agama = ['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu'];
       <input type="text" id="telepon" name="telepon" placeholder="Masukkan nomor HP aktif" required>
 
       <label for="alamat">Alamat Lengkap</label>
-      <textarea id="alamat" name="alamat" placeholder="Masukkan alamat tempat tinggal" required></textarea>
+      <textarea id="alamat" name="alamat" placeholder="Masukkan alamat lengkap" required></textarea>
 
       <label for="asal_sekolah">Asal Sekolah</label>
       <input type="text" id="asal_sekolah" name="asal_sekolah" placeholder="Nama SMA/SMK/MA asal" required>
@@ -149,7 +226,7 @@ $agama = ['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu'];
       <select id="jurusan" name="jurusan" required>
         <option value="">-- Pilih Program Studi --</option>
         <?php foreach ($jurusan as $j): ?>
-          <option value="<?= htmlspecialchars($j) ?>"><?= htmlspecialchars($j) ?></option>
+            <option value="<?= htmlspecialchars($j) ?>"><?= htmlspecialchars($j) ?></option>
         <?php endforeach; ?>
       </select>
 
@@ -164,7 +241,7 @@ $agama = ['Islam', 'Kristen', 'Katolik', 'Hindu', 'Buddha', 'Konghucu'];
       <select id="agama" name="agama" required>
         <option value="">-- Pilih Agama --</option>
         <?php foreach ($agama as $a): ?>
-          <option value="<?= htmlspecialchars($a) ?>"><?= htmlspecialchars($a) ?></option>
+            <option value="<?= htmlspecialchars($a) ?>"><?= htmlspecialchars($a) ?></option>
         <?php endforeach; ?>
       </select>
 
